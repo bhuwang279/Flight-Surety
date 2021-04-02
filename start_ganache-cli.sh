@@ -1,0 +1,1 @@
+ganache-cli -a 45 -m "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat"

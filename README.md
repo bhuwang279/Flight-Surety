@@ -1,52 +1,107 @@
-# FlightSurety
+# FlightSurety Project
 
-FlightSurety is a sample application project for Udacity's Blockchain course.
+FlightSurety is an Ethereum DApp to manage flight insurances. If airline is late and passenger is insured then passenger will be credited 1.5 X insured amount.
 
-## Install
+## Dev Tools Version
 
-This repository contains Smart Contract code in Solidity (using Truffle), tests (also using Truffle), dApp scaffolding (using HTML, CSS and JS) and server app scaffolding.
+The project was developed with  following tools/softwares.
+1. Truffle v5.1.54
+2. Solidity v^0.5.0
+3. nodejs v12.13.1
+4. web3 v1.2.9
+5. Metamask Chrome Extension
+6.VS Code
 
-To install, download or clone the repo, then:
+## Getting Started
 
-`npm install`
-`truffle compile`
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes
 
-## Develop Client
+### Prerequisites
 
-To run truffle tests:
+Please make sure you've already installed ganache-cli, Truffle, Solidity, nodejs  and enabled MetaMask extension in your browser.
 
-`truffle test ./test/flightSurety.js`
-`truffle test ./test/oracles.js`
+### Installing
 
-To use the dapp:
+A step by step series of examples that tell you have to get a development env running
 
-`truffle migrate`
-`npm run dapp`
+Clone this repository:
 
-To view dapp:
+```
+git clone https://github.com/Akbarkz/supply-chain.git
+```
 
-`http://localhost:8000`
+Install dependencies and libraries:
+```
+npm install
+```
 
-## Develop Server
+Launch Ganache: 
 
-`npm run server`
-`truffle test ./test/oracles.js`
+```
+./start_ganache-cli.sh 
 
-## Deploy
+```
 
-To build dapp for prod:
-`npm run dapp:prod`
+Your terminal should look something like this:
 
-Deploy the contents of the ./dapp folder
+![ganache screenshot](images/ganache-cli.png)
 
+
+In a separate terminal window, Compile smart contracts:
+
+```
+truffle compile
+```
+
+Your terminal should look something like this:
+
+![truffle compile](images/truffle-compile.png)
+
+This will create the smart contract artifacts in folder `build\contracts`.
+
+Migrate smart contracts to the locally running blockchain, ganache-cli:
+
+```
+truffle migrate --reset
+```
+
+Your terminal should look something like this:
+
+![truffle migrate](images/truffle-migrate.png)
+
+Test smart contracts:
+
+```
+truffle test
+```
+
+All 19 tests should pass.
+
+![truffle test](images/truffel-test.png)
+
+
+Launch Dapp:
+```
+npm run dapp
+
+```
+![frontend](images/frontend.png)
+
+Launch Server:
+```
+npm run server
+
+```
+![server](images/server.png)
 
 ## Resources
 
-* [How does Ethereum work anyway?](https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369)
-* [BIP39 Mnemonic Generator](https://iancoleman.io/bip39/)
 * [Truffle Framework](http://truffleframework.com/)
 * [Ganache Local Blockchain](http://truffleframework.com/ganache/)
-* [Remix Solidity IDE](https://remix.ethereum.org/)
+* [Flight Surety Project FAQ — Udacity Blockchain](https://andresaaap.medium.com/flightsurety-project-faq-udacity-blockchain-b4bd4fb03320)
 * [Solidity Language Reference](http://solidity.readthedocs.io/en/v0.4.24/)
 * [Ethereum Blockchain Explorer](https://etherscan.io/)
 * [Web3Js Reference](https://github.com/ethereum/wiki/wiki/JavaScript-API)
+
+
+

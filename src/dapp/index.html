@@ -13,18 +13,118 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">FlightSurety</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
 
     <main class="container">
-
         <div id="display-wrapper" class="top-20">
+
+
+
         </div>
-        <div class="row top-20">
-            <label class="form">Flight</label> <input type="text" id="flight-number"> <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+        <select id="selectSection">
+            <option value="1">Airline</option>
+            <option value="2">Passenger</option>
+        </select>
+
+        <div id="airlineSection" class="row">
+            <div class="col-sm-6">
+                <ul>
+                    <li>
+                        <section>
+                            <h4>Fund Your Airline</h4>
+
+                            <div class="row top-20">
+                                <input type="text" id="funding-airline-amount" placeholder="Enter Ether to Send">
+                                <btn class="btn btn-primary" id="fund-airline">Fund</btn>
+                            </div>
+                        </section>
+
+                    </li>
+                    <li>
+                        <section>
+                            <h4>Register Airline</h4>
+                            <div class="row top-20">
+                                <input type="text" id="registering-airline-address" placeholder="Enter Airline Address">
+                                <btn class="btn btn-primary" id="register-airline">Register</btn>
+                            </div>
+                        </section>
+
+                    </li>
+                    <li>
+                        <section>
+                            <h4>Vote Airline</h4>
+                            <div class="row top-20">
+                                <input type="text" id="voting-airline-address" placeholder="Enter Airline Address">
+                                <btn class="btn btn-primary" id="vote-airline">Vote</btn>
+                            </div>
+                        </section>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <ul>
+                    <li>
+                        <section>
+                            <h4>Register Flight</h4>
+
+                            <div class="row top-20">
+                                <input type="text" id="registering-flight-name" placeholder="Enter Flight Name">
+                                <btn class="btn btn-primary" id="register-flight">Register</btn>
+                            </div>
+                        </section>
+
+                    </li>
+                    <li>
+                        <section>
+                            <h4>Get Flight Status</h4>
+
+                            <div class="row top-20">
+                                <select id="oracle-flight-list">
+
+                                </select>
+                                <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+
+                            </div>
+                        </section>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="passengerSection" class="row">
+            <div class="col-sm-12">
+                <ul>
+                    <li>
+                        <section>
+                            <h4>Buy Flight Insurance</h4>
+
+                            <div class="row top-20">
+                                <select id="flight-list">
+
+                                </select>
+                                <input type="number" step="0.1" id="insurance-amount" placeholder="Insurance Amount">
+                                <btn class="btn btn-primary" id="buy-insurance">Buy</btn>
+                            </div>
+                        </section>
+
+                    </li>
+                    <li>
+                        <section>
+                            <h4>Withdraw Insurance Credits</h4>
+                            <div class="row top-20">
+                                <btn class="btn btn-primary" id="withdraw-credits">Withdraw</btn>
+                            </div>
+                        </section>
+
+                    </li>
+                </ul>
+            </div>
         </div>
     </main>
 

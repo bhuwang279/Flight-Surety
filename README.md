@@ -77,7 +77,7 @@ truffle test
 
 All 19 tests should pass.
 
-![truffle test](images/truffel-test.png)
+![truffle test](images/truffle-test.png)
 
 
 Launch Dapp:

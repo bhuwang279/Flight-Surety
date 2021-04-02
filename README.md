@@ -94,6 +94,9 @@ npm run server
 ```
 ![server](images/server.png)
 
+### Important Note.
+Browser needs refresh when you change meta mask account to simulate as as passenger or airline and if flight list is not updated  in dropdown list when new flight is registered. 
+
 ## Resources
 
 * [Truffle Framework](http://truffleframework.com/)
